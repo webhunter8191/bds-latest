@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luxury Hotel</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+  <!-- Navbar -->
+  <header class="bg-white shadow-md">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="flex items-center gap-2">
+        <div class="text-2xl font-bold text-gray-800">Hoexr</div>
+        <span class="text-sm font-light text-gray-500">Luxury Hotel</span>
+      </div>
+      <nav class="hidden md:flex items-center space-x-6">
+        <a href="#" class="text-gray-700 hover:text-gray-900">Home</a>
+        <a href="#" class="text-gray-700 hover:text-gray-900">Rooms & Suites</a>
+        <a href="#" class="text-gray-700 hover:text-gray-900">Pages</a>
+        <a href="#" class="text-gray-700 hover:text-gray-900">News</a>
+        <a href="#" class="text-gray-700 hover:text-gray-900">Contact</a>
+      </nav>
+      <a href="#" class="bg-yellow-500 text-white px-4 py-2 rounded-md shadow hover:bg-yellow-600">Book Now</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative bg-cover bg-center h-screen" style="background-image: url('https://source.unsplash.com/1600x900/?hotel,room');">
+    <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+    <div class="relative container mx-auto px-6 py-20 text-center text-white">
+      <h1 class="text-4xl md:text-6xl font-bold">Life Enjoy With The Great Moments</h1>
+      <p class="mt-4 text-lg font-light">Unique Place and Luxury Hotel</p>
+      <button class="mt-6 bg-white text-black px-8 py-3 rounded-lg shadow-md hover:bg-gray-200">Rooms & Suites</button>
+    </div>
+  </section>
+
+  <!-- Booking Section -->
+  <section class="bg-white shadow-lg -mt-20 relative z-10 rounded-lg">
+    <div class="container mx-auto px-6 py-8 flex flex-wrap justify-between items-center">
+      <!-- Check-in Date -->
+      <div class="flex flex-col w-full md:w-auto md:flex-1 mb-4 md:mb-0">
+        <label for="check-in" class="text-sm text-gray-600 mb-2">Check In</label>
+        <input id="check-in" type="date" class="border border-gray-300 rounded-lg px-4 py-2 w-full">
+      </div>
+      <!-- Check-out Date -->
+      <div class="flex flex-col w-full md:w-auto md:flex-1 mb-4 md:mb-0">
+        <label for="check-out" class="text-sm text-gray-600 mb-2">Check Out</label>
+        <input id="check-out" type="date" class="border border-gray-300 rounded-lg px-4 py-2 w-full">
+      </div>
+      <!-- Room Selection -->
+      <div class="flex flex-col w-full md:w-auto md:flex-1 mb-4 md:mb-0">
+        <label for="room" class="text-sm text-gray-600 mb-2">Room</label>
+        <select id="room" class="border border-gray-300 rounded-lg px-4 py-2 w-full">
+          <option>Standard Room Size</option>
+          <option>Deluxe Room</option>
+          <option>Luxury Suite</option>
+        </select>
+      </div>
+      <!-- Check Now Button -->
+      <div class="flex w-full md:w-auto">
+        <button class="bg-yellow-500 text-white px-6 py-3 rounded-lg shadow-md hover:bg-yellow-600 w-full md:w-auto">Check Now</button>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
